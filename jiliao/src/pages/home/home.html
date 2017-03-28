@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>即聊</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-item *ngFor="let item of chatlist" (click)="gochat()">
+    <ion-thumbnail item-left>
+      <img [src]="item.headportrait">
+    </ion-thumbnail>
+    <h2>{{item.MacX}}</h2>
+    <p>{{item.information}}</p>
+    <button ion-button clear item-right>
+      {{item.currentTime}}
+    </button>
+  </ion-item>
+</ion-content>
