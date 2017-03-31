@@ -1,3 +1,19 @@
 page-chatboundary {
+  .sendmessage{
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 0;
+    margin-top: 1px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 13px Helvetica, Arial; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li {
+           padding: 5px 10px;
+           text-align: right;
 
+          }
+        #messages li:nth-child(odd) { background: #eee; }
+        #messages li:nth-child(even){ background: #ccc; }
 }

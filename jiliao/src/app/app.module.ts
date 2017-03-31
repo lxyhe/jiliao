@@ -8,10 +8,8 @@ import { DiscoverPage }from '../pages/discover/discover';
 import { ChatboundaryPage } from '../pages/chatboundary/chatboundary';
 import { TabsPage } from '../pages/tabs/tabs';
 
-
-
 import { Getuserlist } from '../providers/getuserlist';
-
+import { ConnectionServices } from '../providers/connectionservices';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -51,6 +49,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Getuserlist,
+    ConnectionServices
   ]
 })
 export class AppModule { }

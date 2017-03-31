@@ -1,15 +1,17 @@
-
 <ion-header>
   <ion-navbar>
     <ion-title>一家人</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content >
-
+<ion-content>
+  <ul id="messages"></ul>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
-    <ion-title>说话</ion-title>
+    <ion-input [(ngModel)]="myInput"  id="m" autocomplete="off"  placeholder="请输入内容" ></ion-input>
+    <button class="sendmessage" ion-button type="button" name="button" (click)="onInput()">
+      发送
+    </button>
   </ion-toolbar>
 </ion-footer>

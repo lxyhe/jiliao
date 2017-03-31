@@ -15,13 +15,10 @@ export class HomePage {
     this.getuserlistCtrl.getuserlist()
     .then(res=>{
       this.chatlist=res;
-
-      console.log(this.chatlist.currentTime)
     })
 }
 
-gochat(){
-  console.log("11111")
-  this.navCtrl.push(ChatboundaryPage);
-}
+  gochat(){
+    this.navCtrl.push(ChatboundaryPage);
+  }
 }
